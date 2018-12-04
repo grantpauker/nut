@@ -1,3 +1,5 @@
 INCLUDE_DIR=/usr/include
-all: nut.hpp
+install: nut.hpp
 	sudo cp -f $< $(INCLUDE_DIR)
+uninstall: nut.hpp
+	sudo rm -f $(INCLUDE_DIR)/$< 
